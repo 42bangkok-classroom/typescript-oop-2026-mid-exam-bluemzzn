@@ -29,7 +29,7 @@ interface FullAlbum {
 const PHOTOS_URL = 'https://jsonplaceholder.typicode.com/photos';
 const ALBUMS_URL = 'https://jsonplaceholder.typicode.com/albums';
 
-async function mapPhotoToAlbum(): Promise<FullAlbum[]> {
+export async function mapPhotoToAlbum(): Promise<FullAlbum[]> {
     try {
         const [photoRes, albumRes] = await Promise.all([
             axios.get<Photos[]>(PHOTOS_URL),

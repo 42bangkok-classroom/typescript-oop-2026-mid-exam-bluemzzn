@@ -4,7 +4,6 @@ let fizzBuzz = process.argv[2];
 
 if (!fizzBuzz || fizzBuzz.trim() === "") {
     console.log("Invalid input");
-    process.exit();
 }
 
 

@@ -8,7 +8,7 @@ if (!grade ) {
 }
 
 let gradeInput = Number(grade);
-if (Number.isNaN(gradeInput) || gradeInput <= 0 || gradeInput > 100 ) {
+if (Number.isNaN(gradeInput) || gradeInput < 0 || gradeInput > 100 ) {
     console.log("Invalid input");
 }
 

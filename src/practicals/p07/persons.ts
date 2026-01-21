@@ -4,7 +4,10 @@ interface Person {
   age?: number;
 }
 
-function sortPersons(persons: Person[]): Person[] {}
+function sortPersons(persons: Person[]): Person[] {
+  const sortFirstName = [...persons].sort((a,b) => 
+    a.firstName.localeCompare(b.firstName));
+}
 
 
 const persons: Person[] = [

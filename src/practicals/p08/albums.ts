@@ -13,7 +13,7 @@ interface Albums {
     title: string;
 }
 
-interface FullAlbums {
+interface FullAlbum {
     userId: number;
     id: number;
     title: string;
@@ -29,7 +29,7 @@ interface FullAlbums {
 const PHOTOS_URL = 'https://jsonplaceholder.typicode.com/photos';
 const ALBUMS_URL = 'https://jsonplaceholder.typicode.com/albums';
 
-export async function mapPhotoToAlbum(): Promise<FullAlbums[]> {
+export async function mapPhotoToAlbum(): Promise<FullAlbum[]> {
     try {
         const [photoRes, albumRes] = await Promise.all([
             axios.get<Photos[]>(PHOTOS_URL),

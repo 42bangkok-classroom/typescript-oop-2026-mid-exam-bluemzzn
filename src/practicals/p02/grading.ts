@@ -3,13 +3,13 @@
 let grade = process.argv[2];
 
 if (!grade ) {
-    console.log("Invalid Input");
+    console.log("Invalid input");
     process.exit();
 }
 
 let gradeInput = Number(grade);
 if (Number.isNaN(gradeInput) || gradeInput <= 0 || gradeInput > 100 ) {
-    console.log("Invalid Input");
+    console.log("Invalid input");
 }
 
 else {

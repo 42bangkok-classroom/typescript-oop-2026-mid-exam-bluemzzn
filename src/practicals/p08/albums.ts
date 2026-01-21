@@ -5,7 +5,7 @@ interface Photos {
     id: number;
     title: string;
     url: string;
-    thumnailURl: string;
+    thumbnailUrl: string;
 }
 interface Albums {
     userId: number;
@@ -22,7 +22,7 @@ interface FullAlbum {
         id: number;
         title: string;
         url: string;
-        thumnailURl: string;
+        thumbnailUrl: string;
     }
 }
 
@@ -51,7 +51,7 @@ export async function mapPhotoToAlbum(): Promise<FullAlbum[]> {
                     id: photo.id,
                     title: photo.title,
                     url: photo.url,
-                    thumnailURl: photo.thumnailURl
+                    thumbnailUrl: photo.thumbnailUrl
                 }
             };
         });
